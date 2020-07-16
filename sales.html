@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ZangO.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        function toggle() {
+            var btn = document.getElementById("abc");
+            if (btn.innerHTML == "menu") {
+                document.getElementsByTagName("ul")[0].style.left = "0px";
+                btn.innerHTML = "close";
+                btn.style.transform = "rotate(180deg)";
+            } else {
+                document.getElementsByTagName("ul")[0].style.left = "-710px";
+                document.getElementById("abc").innerHTML = "menu";
+                btn.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/winnicontact.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+           <header>
+        <div class="head_box">
+                <div id="box-ha">
+                    <h2 class="head">ZangO</h2>
+                </div>
+                <div id="box-hb">
+                    <input type="text" placeholder="Search for products and inspiration">
+                </div>
+                <div id="box-hc">
+                    <p>Hello Guest, </p>
+                    <a href="track.html">
+                        <div id="cart">
+                            <img src="Images/cart.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Cart</p>
+
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div id="acc">
+                            <img src="Images/acc.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Account</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html"> Home</a></li>
+                    <li><a href="animation.html"> Our Desginers</a>
+                        <ul>
+                            <li><a>First</a></li>
+                            <li><a>Second</a></li>
+                            <li><a>Third</a></li>
+                            <li><a>Fourth</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sales.html"> Contact Us</a></li>
+                </ul>
+                <a href="#" class="material-icons" onclick="toggle()" id="abc">menu</a>
+            </nav>
+    </header>
+
+    <main>
+        <div class="third_bg"></div>
+        <h1 class="scnd_head">Who Would You Like To Talk To</h1>
+        <div id="button1">
+            <input id="btn_active" type="button" value="SUPPORT" onclick="myFunction()">
+            <input id="btn" type="button" value="SALES" onclick="myFunction1()">
+        </div>
+        
+        <div id="contactbox">
+            <h1 class="head">Support Hours:<br> 8am - 8:30pm CST</h1>
+            <br>
+            <h3 class="conth3">
+            <span id="hours">&nbsp;</span>:
+            <span id="minutes">&nbsp;</span>:
+            <span id="seconds">&nbsp;</span>&nbsp;
+            <span id="ampm">&nbsp;</span>
+            </h3>
+    
+            <div class="contactinf">
+                <div>
+                    <h3 class="conth3">Contact Our Support Team</h3>
+                    <hr>
+                    <div class="cmainp">
+                        <br>
+                        <br>
+                        <h3 class="conth3"><span class="contactspan">Location:</span> 321 Awesome Street, New York, NY 17022</h3>
+                        <br>
+                        <br>
+                        <h3 class="conth3"><span class="contactspan">E-mail:</span> doctors@gmail.com</h3>
+                        <br>
+                        <br>
+                        <h3 class="conth3"><span class="contactspan">Contact at:</span>+1 416 768 1816</h3>
+                        <input type="button" value="LIVE CHAT" class="button">
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="conth3">Submit a Support Request Here</h3>
+                    <hr>
+                    <form id="support" action="" method="get" autocomplete="off">
+                        <div>
+                            <select name="product" id="product">
+                                <option selected disabled>What Do You Need Help With?</option>
+                                <option>My Website</option>
+                                <option>My Listing</option>
+                                <option>My Market Insight</option>
+                                <option>Billing</option>
+                                <option>Other</option>
+                            </select>
+                            <span class="validation">*</span>
+                        </div>
+                        <input name="name" type="text" placeholder="First Name">
+                        <span class="validation">*</span>
+                        <input name="name" type="text" placeholder="Last Name">
+                        <span class="validation">*</span>
+                        <input type="text" name="email" id="email"  placeholder="E-Mail" >
+                        <span class="validation">*</span>
+                        <input name="phone" id="phone"  placeholder="999-999-0000" type="text">
+                        <span class="validation">*</span>
+                        <textarea class="text" type="text" rows="8" cols="72" placeholder="Message"></textarea>
+                        <span class="validation">*</span>
+                        <input type="submit" class="button" value="Contact Us Now">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="salesdiv">
+            <h1 class="head">Get in Touch With Our Sales Team</h1>
+            <div>
+                <a href="tel:416-768-1816"><input type="button" value="416-768-1816" class="button"> </a>
+                <a href=mailto:yachnamahajan24@gmail.com><input type="button" value="E-MAIL US" class="button"></a>
+            </div>
+
+            <form id="support" action="" method="get" autocomplete="off" onsubmit="return process()">
+                <input id="name1" name="name" type="text" placeholder="First Name" >
+                <span class="validation">*</span>
+                <input name="name" type="text" type = "email" placeholder="Last Name">
+                <span class="validation">*</span>
+                <input name="email" id="email1" type="text" placeholder="E-Mail">
+                <span class="validation">*</span>
+                <input name="phone" id="phone1" placeholder="999-999-0000" type="text">
+                <span class="validation">*</span>
+                <select name="product" id="product1">
+                    <option selected disabled>What Product Are You interested In?</option>
+                    <option>A Website</option>
+                    <option>Wordpress Pligin</option>
+                    <option>Market Insight</option>
+                    <option>IDX Listings</option>
+                    <option>Customer Support</option>
+                </select>
+                <span class="validation">*</span>
+<!--
+                <div>
+                    <label class="conth3" for="website">Do You Have a Website <span class="red">*</span></label>
+                    <input id="yes" type="radio" class="radio" name="website" value="Yes" > Yes
+                    <input id="no" type="radio" name="website" value="No" checked> No
+                </div>
+-->
+                <label>&nbsp;</label>
+                <input id="register" type="submit" value="Submit">
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+            <div class="box-4">
+                <div id="box-3a">
+                    <p>About us</p>
+                </div>
+                <div id="box-3a">
+                    <p>Help</p>
+                </div>
+                <div id="box-3a">
+                    <p>Services</p>
+                </div>
+                <div id="box-3a">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box-3">
+                <div id="box-4a">
+                    <a href="#">Our Company</a>
+                    <a href="#">Our Designers</a>
+                    <a href="#">Customer Reviews</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Tracking Order</a>
+                    <a href="#">Help and FAQs</a>
+                    <a href="#">Deliveries</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Inspiration</a>
+                    <a href="#">Vouchers</a>
+                    <a href="#">Showroom</a>
+                </div>
+                <div id="box-4a">
+                    <h2 class="head">ZangO.com</h2>
+                </div>
+            </div>
+            <hr>
+            <p class="copy"> ©2008-2010 Copyright by Mirror Communications. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

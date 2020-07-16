@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ZangO.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        function toggle() {
+            var btn = document.getElementById("abc");
+            if (btn.innerHTML == "menu") {
+                document.getElementsByTagName("ul")[0].style.left = "0px";
+                btn.innerHTML = "close";
+                btn.style.transform = "rotate(180deg)";
+            } else {
+                document.getElementsByTagName("ul")[0].style.left = "-710px";
+                document.getElementById("abc").innerHTML = "menu";
+                btn.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+       <header>
+        <div class="head_box">
+                <div id="box-ha">
+                    <h2 class="head">ZangO</h2>
+                </div>
+                <div id="box-hb">
+                    <input type="text" placeholder="Search for products and inspiration">
+                </div>
+                <div id="box-hc">
+                    <p>Hello Guest, </p>
+                    <a href="track.html">
+                        <div id="cart">
+                            <img src="Images/cart.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Cart</p>
+
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div id="acc">
+                            <img src="Images/acc.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Account</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html"> Home</a></li>
+                    <li><a href="animation.html"> Our Desginers</a>
+                        <ul>
+                            <li><a>First</a></li>
+                            <li><a>Second</a></li>
+                            <li><a>Third</a></li>
+                            <li><a>Fourth</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sales.html"> Contact Us</a></li>
+                </ul>
+                <a href="#" class="material-icons" onclick="toggle()" id="abc">menu</a>
+            </nav>
+    </header>
+
+        <main>
+            <h1 class="head_log">Welcome to Zango.com </h1>
+            <hr>
+            <div class="log">
+                <h2 class="log_head"> Sign IN</h2>
+                <br>
+                <br>
+                <form class="form">
+<!--                    <label for="email">Email ID</label>-->
+                    <input type="text" id="email" name="firstname" placeholder="Your email@example.com">
+<!--                    <label for="pass">Password</label>-->
+                    <input type="text" id="pass" name="firstname" placeholder="Your Password..">
+                    <input  type="button" class="button" value="Sign IN" onclick="login()">
+                </form>
+                <div id="track_option">
+                    <ul>
+                    <li><a href="track.html"> Track Your Orders</a></li><br><br>
+                    <li><a href="track.html">Delivered Orders</a></li><br><br>
+                    <li><a href="track.html">Total Orders</a></li><br><br>
+                    <li><a href="track.html">Cancelled Orders</a></li><br><br>
+                    
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="box-4">
+                <div id="box-3a">
+                    <p>About us</p>
+                </div>
+                <div id="box-3a">
+                    <p>Help</p>
+                </div>
+                <div id="box-3a">
+                    <p>Services</p>
+                </div>
+                <div id="box-3a">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box-3">
+                <div id="box-4a">
+                    <a href="#">Our Company</a>
+                    <a href="#">Our Designers</a>
+                    <a href="#">Customer Reviews</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Tracking Order</a>
+                    <a href="#">Help and FAQs</a>
+                    <a href="#">Deliveries</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Inspiration</a>
+                    <a href="#">Vouchers</a>
+                    <a href="#">Showroom</a>
+                </div>
+                <div id="box-4a">
+                   <h2 class="head">ZangO.com</h2>
+                </div>
+            </div>
+            <hr>
+            <p class="copy"> ©2008-2010 Copyright by Mirror Communications. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

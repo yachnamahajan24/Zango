@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>ZangO.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="CSStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        function toggle() {
+            var btn = document.getElementById("abc");
+            if (btn.innerHTML == "menu") {
+                document.getElementsByTagName("ul")[0].style.left = "0px";
+                btn.innerHTML = "close";
+                btn.style.transform = "rotate(180deg)";
+            } else {
+                document.getElementsByTagName("ul")[0].style.left = "-710px";
+                document.getElementById("abc").innerHTML = "menu";
+                btn.style.transform = "rotate(0deg)";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+      <header>
+        <div class="head_box">
+                <div id="box-ha">
+                    <h2 class="head">ZangO</h2>
+                </div>
+                <div id="box-hb">
+                    <input type="text" placeholder="Search for products and inspiration">
+                </div>
+                <div id="box-hc">
+                    <p>Hello Guest, </p>
+                    <a href="track.html">
+                        <div id="cart">
+                            <img src="Images/cart.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Cart</p>
+
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div id="acc">
+                            <img src="Images/acc.png" style="width: 35px; padding: 0px; margin: 0px;">
+                            <p> Account</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html"> Home</a></li>
+                    <li><a href="animation.html"> Our Desginers</a>
+                        <ul>
+                            <li><a>First</a></li>
+                            <li><a>Second</a></li>
+                            <li><a>Third</a></li>
+                            <li><a>Fourth</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sales.html"> Contact Us</a></li>
+                </ul>
+                <a href="#" class="material-icons" onclick="toggle()" id="abc">menu</a>
+            </nav>
+    </header>
+
+        <main>
+            <div class="bg">
+
+            </div>
+            <h1 class="scnd_head">The Best For Less</h1>
+            <div class="box">
+                <div id="box-1">
+                    <img src="Images/PNG1.png">
+                    <p> Orson 3 Seater Sofa</p>
+                    <p> $50</p>
+                </div>
+                <div id="box-1">
+                    <img src="Images/PNG2.png">
+                    <p> Orson 3 Seater Sofa</p>
+                    <p> $50</p>
+                </div>
+                <div id="box-1">
+                    <img src="Images/PNG4.png">
+                    <p> Orson 3 Seater Sofa</p>
+                    <p> $50</p>
+                </div>
+                <div id="box-1">
+                    <img src="Images/PNG5.png">
+                    <p> Orson 3 Seater Sofa</p>
+                    <p> $50</p>
+                </div>
+            </div>
+
+            <div class="scnd_bg">
+                <h1 class="scnd_head">Meet Our Designers</h1>
+                <div class="blackish">
+                    <p class="p_scnd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum velit nisl, ornare non magna in, tincidunt semper ligula. Nullam gravida est non augue rhoncus mattis.Pellentesque faucibus dictum pretium. Nam eleifend libero non risus finibus, vitae congue justo facilisis. Integer ut maximus massa. Vestibulum laoreet arcu sed mi maximus semper. Donec sit amet porttitor metus. Cras rutrum pretium imperdiet. Mauris condimentum congue lobortis. Praesent faucibus, ante a dapibus lobortis, ligula orci fermentum elit, id volutpat ante augue vel nibh. Vestibulum vel massa a erat tempor euismod. Maecenas feugiat ex nibh, eget pharetra tellus aliquet sed. Aenean mattis magna quis aliquam commodo. Ut quis dui ante. Ut a risus id dolor interdum malesuada. Morbi eu suscipit neque, nec tristique turpis. In placerat ullamcorper euismod. </p>
+                    <button type="button" class="button">Meet us!</button>
+                </div>
+            </div>
+            <div class="box-2">
+                <div id="box-2a">
+                    <h1 class="head">Dining Room Sale, <br> Upto 40% off</h1>
+                    <img class="dine" src="Images/dine.jpg">
+
+                </div>
+                <div id="box-2b">
+                    <img class="dine2" src="Images/dine2.jpg">
+                    <h1 class="head1">Dining Chairs Sale, <br> Upto 40% off</h1>
+
+                </div>
+            </div>
+            <div class="shop">
+                <div class="box-3">
+                    <div id="box-3a">
+                        <a href="#">SHOP BY CATEGORY</a>
+                    </div>
+                    <div id="box-3a">
+                        <a href="#">SHOP BY ROOM</a> </div>
+                    <div id="box-3a">
+                        <a href="#">SHOP BY STYLE</a> </div>
+                </div>
+
+                <div class="box-3">
+                    <div id="box-4a">
+                        <a class="aitem" href="#">Living Room</a>
+                        <a class="aitem" href="#">Dining Room</a>
+                        <a class="aitem" href="#">Bedroom</a>
+                        <a class="aitem" href="#">Kitchen</a>
+                    </div>
+                    <div id="box-4a">
+                        <img id="img_box" src="Images/shop1">
+                    </div>
+                    <div id="box-4a">
+                        <a class="aitem" href="#">Office Room</a>
+                        <a class="aitem" href="#">Hallway Room</a>
+                        <a class="aitem" href="#">Bathroom</a>
+                        <a class="aitem" href="#">All Furniture</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-4">
+                <div id="box-3a">
+                    <h1 class="head_4"> From Concept to Creation</h1>
+                    <br>
+                    <br>
+                    <p>To mark the launch of our fifth TalentLAB collection, six of our designers open up their sketchbooks and talk inspiration.</p>
+                    <br>
+                    <br>
+                    <a class="aitem" href="#"> Read More</a>
+                </div>
+                <div id="box-3b">
+                </div>
+            </div>
+
+            <div class="box-5">
+                <div id="box-5a">
+                    <h1 class="head_5">Where Innovative ideas are Appreciated </h1>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>To mark the launch of our fifth TalentLAB collection, six of our designers open up their sketchbooks and talk inspiration.TalentLAB is our game-changing, crowdsourcing platform. You upload your ideas. We curate a collection. You pledge on your favourite pieces, and the most popular get MADE. Our latest edit, The Zen Collection, is designed to calm the mind and make your home an oasis.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a class="aitem" href="#"> SEE THE LATEST EDIT</a>
+                </div>
+                <div id="box-5b">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="box-4">
+                <div id="box-3a">
+                    <p>About us</p>
+                </div>
+                <div id="box-3a">
+                    <p>Help</p>
+                </div>
+                <div id="box-3a">
+                    <p>Services</p>
+                </div>
+                <div id="box-3a">
+                    <p> </p>
+                </div>
+            </div>
+            <div class="box-3">
+                <div id="box-4a">
+                    <a href="#">Our Company</a>
+                    <a href="#">Our Designers</a>
+                    <a href="#">Customer Reviews</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Tracking Order</a>
+                    <a href="#">Help and FAQs</a>
+                    <a href="#">Deliveries</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div id="box-4a">
+                    <a href="#">Inspiration</a>
+                    <a href="#">Vouchers</a>
+                    <a href="#">Showroom</a>
+                </div>
+                <div id="box-4a">
+                    <h2 class="head">ZangO.com</h2>
+                </div>
+            </div>
+            <hr>
+            <p class="copy"> ©2008-2010 Copyright by Mirror Communications. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
